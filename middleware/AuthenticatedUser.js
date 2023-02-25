@@ -2,6 +2,7 @@
 require('dotenv').config();
 const {sign, verify} = require('jsonwebtoken');
 // Creating a token
+// Signing to terms and conditions example
 function createToken(user) {
     return sign({
         emailAdd: user.emailAdd,
